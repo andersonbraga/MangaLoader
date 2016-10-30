@@ -9,6 +9,7 @@ import { WebDevTecService } from '../app/components/webDevTec/webDevTec.service'
 import { NavbarDirective } from '../app/components/navbar/navbar.directive';
 import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
 
+
 angular.module('mangaloadFront', ['ui.router', 'ui.bootstrap', 'toastr'])
   .constant('malarkey', malarkey)
   .constant('moment', moment)
@@ -20,3 +21,4 @@ angular.module('mangaloadFront', ['ui.router', 'ui.bootstrap', 'toastr'])
   .controller('MainController', MainController)
   .directive('acmeNavbar', NavbarDirective)
   .directive('acmeMalarkey', MalarkeyDirective);
+
