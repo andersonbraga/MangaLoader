@@ -7725,11 +7725,11 @@ button.close {
 }
 
 .thumbnail {
-  height: 300px;
+  height: 200px;
 }
 
 .thumbnail img.pull-center {
-  width: 100px;
+  width: 50px;
 }
 
 /**
