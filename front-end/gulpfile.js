@@ -1,13 +1,11 @@
-/**
- *  Welcome to your gulpfile!
- *  The gulp tasks are split into several files in the gulp directory
- *  because putting it all here was too long
- */
+
 
 'use strict';
 
 var fs = require('fs');
 var gulp = require('gulp');
+var gulp = require('gulp');
+var webp = require('gulp-webp');
 
 /**
  *  This will load all js or coffee files in the gulp directory
@@ -27,3 +25,29 @@ fs.readdirSync('./gulp').filter(function(file) {
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
 });
+
+
+
+ /**
+ * Start conversion of images
+ *The conversion is applied in te folder contains that images
+ */
+gulp.task('convert', function () {
+    return gulp.src('src/assets/JPG/**')
+        .pipe(webp())
+        .pipe(gulp.dest('src/assets/WEBP'));
+});
+
+/**
+*This code is old and couldn't funcion in format webp no more,
+*but function in the format jpg
+var gulp = require('gulp'),
+    imagemin = require('gulp-imagemin');
+
+gulp.task ('compression', function()
+    {
+        gulp.src('src/assets/b/6/[KS] Kingdom_53/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('src/assets/c'));
+    }     );
+*/
