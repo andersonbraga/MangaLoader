@@ -7,7 +7,8 @@ export class WebDevTecService {
         'title': 'Tower of Gods',
         'url': 'Ler Manga',
         'description': 'Manhwa',
-        'logo': 'Tower.png'
+        'logo': 'Tower.png',
+        'descricao': 'tw'
       },
       {
         'title': 'Noblese',
