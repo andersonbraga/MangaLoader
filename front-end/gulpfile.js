@@ -33,15 +33,20 @@ gulp.task('default', ['clean'], function () {
  *The conversion is applied in te folder contains that images
  */
 gulp.task('convert', function () {
-    return gulp.src('src/assets/JPG/**')
+    return gulp.src('src/assets/images/*')
         .pipe(webp())
-        .pipe(gulp.dest('src/assets/WEBP'));
+        .pipe(gulp.dest('src/assets/images'));
 });
 
 
 
-gulp.task('clean-image', function () {
+gulp.task('clean-png', function () {
   return gulp.src('src/assets/images/*.png', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('clean-jpg', function () {
+  return gulp.src('src/assets/images/*.jpg', {read: false})
     .pipe(clean());
 });
 
