@@ -11,14 +11,14 @@ export function routerConfig ($stateProvider, $urlRouterProvider) {
       .state('auth',
     {
       url: '/auth',
-      templateUrl: 'app/components/auth/auth.html',
+      templateUrl: 'app/auth/auth.html',
       controller: 'AuthController',
       controllerAs: 'auth'
     })
          .state('descricao-frost',
     {
       url: '/descricao-frost',
-      templateUrl: 'app/components/manga-descricao/frost-descricao/descricao-frost.html',
+      templateUrl: 'app/manga-descricao/frost-descricao/descricao-frost.html',
       controller: 'FrostController',
       controllerAs: 'descricao-frost'
     });
