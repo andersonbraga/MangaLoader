@@ -4,7 +4,7 @@ export function CompareToDirective($parse)
     return
         {
             require: 'ngModel',
-            link: function(scope, elm,attrs, mgModel)
+            link: function(scope, elm, attrs, ngModel)
             {
                 var mainModel = $parse(attrs.compareTo);
                 var secondModel = $parse(attrs.ngModel);
@@ -16,7 +16,7 @@ export function CompareToDirective($parse)
 
                 scope.$watch(attrs.compareTo, function (newValue)
                 {
-                    ngModel.$setValidity($attrs.name, new Value === secondModel(scope));
+                    ngModel.$setValidity(attrs.name, newValue === secondModel(scope));
                 });
             }
         }
