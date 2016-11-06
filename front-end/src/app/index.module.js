@@ -5,7 +5,7 @@ import { routerConfig } from './index.route';
 import { runBlock } from './index.run';
 import { MainController } from './main/main.controller';
 import { AuthController } from './auth/auth.controller';
-import { CompareToDirective } from './directives/compareTo.directive';
+import { CompareToDirective } from '../app/directives/compareTo.directive';
 import { FrostController } from './manga-descricao/frost-descricao/descricao-frost.controller';
 import { OrangeController } from './manga-descricao/orange-descricao/orange-descricao.controller';
 import { TowerOfGodsController } from './manga-descricao/tower-of-gods-descricao/tower-of-gods-descricao.controller';
@@ -15,7 +15,8 @@ import { NavbarDirective } from '../app/components/navbar/navbar.directive';
 import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive';
 
 
-angular.module('mangaloadFront', ['ui.router', 'ui.bootstrap', 'toastr'])
+angular.module('mangaloadFront', ['ui.router', 'ui.bootstrap', 'toastr', 'satellizer'])
+  .constant('API_URL' 'http://localhost:5000/')
   .constant('malarkey', malarkey)
   .constant('moment', moment)
   .config(config)
@@ -29,6 +30,6 @@ angular.module('mangaloadFront', ['ui.router', 'ui.bootstrap', 'toastr'])
   .controller('OrangeController', OrangeController)
   .controller('TowerOfGodsController', TowerOfGodsController)
   .directive('acmeNavbar', NavbarDirective)
-  .directive('acmeMalarkey', MalarkeyDirective);
+  .directive('acmeMalarkey', MalarkeyDirective)
   .directive('compareTo', CompareToDirective );
 
