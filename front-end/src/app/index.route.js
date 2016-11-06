@@ -21,6 +21,20 @@ export function routerConfig ($stateProvider, $urlRouterProvider) {
       templateUrl: 'app/manga-descricao/frost-descricao/descricao-frost.html',
       controller: 'FrostController',
       controllerAs: 'descricao-frost'
+    })
+       .state('orange-descricao',
+    {
+      url: '/orange-descricao',
+      templateUrl: 'app/manga-descricao/orange-descricao/orange-descricao.html',
+      controller: 'OrangeController',
+      controllerAs: 'orange-descricao'
+    })
+       .state('tower-of-gods-descricao',
+    {
+      url: '/tower-of-gods-descricao',
+      templateUrl: 'app/manga-descricao/tower-of-gods-descricao/tower-of-gods-descricao.html',
+      controller: 'TowerOfGodsController',
+      controllerAs: 'tower-of-gods-descricao'
     });
 
 

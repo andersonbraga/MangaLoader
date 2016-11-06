@@ -8,7 +8,7 @@ export class WebDevTecService {
                 'url': 'Ler Manga',
                 'description': 'Manhwa',
                 'logo': 'Tower.webp',
-                'link': 'descricao-towe-of-god',
+                'link': 'tower-of-gods-descricao',
                 'logo-descricao': 'Tower.webp'
 
       },
@@ -17,7 +17,7 @@ export class WebDevTecService {
                 'url': 'Ler Manga',
                 'description': 'Manhwa',
                 'logo': 'Noblese.webp',
-                'link': 'descricao-noblese',
+                'link': 'noblese-descricao',
                 'logo-descricao': 'Noblese.webp'
       },
             {
@@ -25,7 +25,7 @@ export class WebDevTecService {
                 'url': 'Ler Manga',
                 'description': 'Manhwa',
                 'logo': 'orange.webp',
-                'link': 'descricao-orange',
+                'link': 'orange-descricao',
                 'logo-orange': 'orange.webp'
       },
             {
@@ -33,7 +33,7 @@ export class WebDevTecService {
                 'url': 'Ler Manga',
                 'description': 'Manhwa',
                 'logo': 'untouchable.webp',
-                'link': 'descricao-untouchable',
+                'link': 'untouchable-descricao',
                 'logo-untouchable': 'untouchable.webp'
       },
             {
