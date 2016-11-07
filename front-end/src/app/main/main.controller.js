@@ -8,6 +8,8 @@ export class MainController {
 
 
     this.activate($timeout, webDevTec);
+
+
   }
 
   activate($timeout, webDevTec) {

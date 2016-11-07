@@ -5,8 +5,8 @@ export class WebDevTecService {
         this.data = [
             {
                 'title': 'Tower of Gods',
-                'url': 'Ler Manga',
-                'description': 'Manhwa',
+                'url': 'Ler Webtoon',
+                'description': 'Webtoon',
                 'logo': 'Tower.webp',
                 'link': 'tower-of-gods-descricao',
                 'logo-descricao': 'Tower.webp'
@@ -14,32 +14,32 @@ export class WebDevTecService {
       },
             {
                 'title': 'Noblese',
-                'url': 'Ler Manga',
-                'description': 'Manhwa',
+                'url': 'Ler Webtoon',
+                'description': 'Webtoon',
                 'logo': 'Noblese.webp',
                 'link': 'noblese-descricao',
                 'logo-descricao': 'Noblese.webp'
       },
             {
                 'title': 'Orange',
-                'url': 'Ler Manga',
-                'description': 'Manhwa',
+                'url': 'Ler Webtoon',
+                'description': 'Webtoon',
                 'logo': 'orange.webp',
                 'link': 'orange-descricao',
                 'logo-orange': 'orange.webp'
       },
             {
                 'title': 'unTouchable',
-                'url': 'Ler Manga',
-                'description': 'Manhwa',
+                'url': 'Ler Webtoon',
+                'description': 'Webtoon',
                 'logo': 'untouchable.webp',
                 'link': 'untouchable-descricao',
                 'logo-untouchable': 'untouchable.webp'
       },
             {
                 'title': 'Dr.Frost',
-                'url': 'Ler Manga',
-                'description': 'Manhwa',
+                'url': 'Ler Webtoon',
+                'description': 'Webtoon',
                 'logo': 'frost.webp',
                 'link': 'descricao-frost',
                 'logo-descricao': 'frost.webp'

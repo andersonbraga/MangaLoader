@@ -1,4 +1,4 @@
-/* global malarkey:false, moment:false */
+
 
 import { config } from './index.config';
 import { routerConfig } from './index.route';
@@ -16,7 +16,7 @@ import { MalarkeyDirective } from '../app/components/malarkey/malarkey.directive
 
 
 angular.module('mangaloadFront', ['ui.router', 'ui.bootstrap', 'toastr', 'satellizer'])
-  .constant('API_URL' 'http://localhost:5000/')
+  .constant('API_URL', 'http://localhost:5000/')
   .constant('malarkey', malarkey)
   .constant('moment', moment)
   .config(config)

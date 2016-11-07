@@ -33,9 +33,9 @@ gulp.task('default', ['clean'], function () {
  *The conversion is applied in te folder contains that images
  */
 gulp.task('convert', function () {
-    return gulp.src('src/assets/images/*')
+    return gulp.src('src/assets/JPG/**')
         .pipe(webp())
-        .pipe(gulp.dest('src/assets/images'));
+        .pipe(gulp.dest('src/assets/WEBP'));
 });
 
 
